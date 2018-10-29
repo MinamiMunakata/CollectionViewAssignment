@@ -15,6 +15,7 @@
 		D8DE06C52187691B00D7E9C8 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE06C42187691B00D7E9C8 /* ImageCollectionViewCell.swift */; };
 		D8DE06C721876D8000D7E9C8 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE06C621876D8000D7E9C8 /* Photo.swift */; };
 		D8DE06C921876F5B00D7E9C8 /* PhotoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE06C821876F5B00D7E9C8 /* PhotoFactory.swift */; };
+		D8DE06CD21879FB900D7E9C8 /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE06CC21879FB900D7E9C8 /* SectionHeaderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D8DE06C42187691B00D7E9C8 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8DE06C621876D8000D7E9C8 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		D8DE06C821876F5B00D7E9C8 /* PhotoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFactory.swift; sourceTree = "<group>"; };
+		D8DE06CC21879FB900D7E9C8 /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D8DE06C42187691B00D7E9C8 /* ImageCollectionViewCell.swift */,
 				D8DE06C621876D8000D7E9C8 /* Photo.swift */,
 				D8DE06C821876F5B00D7E9C8 /* PhotoFactory.swift */,
+				D8DE06CC21879FB900D7E9C8 /* SectionHeaderCollectionReusableView.swift */,
 			);
 			path = CollectionViewAssignment;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8DE06CD21879FB900D7E9C8 /* SectionHeaderCollectionReusableView.swift in Sources */,
 				D8DE06C721876D8000D7E9C8 /* Photo.swift in Sources */,
 				D8DE06C52187691B00D7E9C8 /* ImageCollectionViewCell.swift in Sources */,
 				D8DE06C921876F5B00D7E9C8 /* PhotoFactory.swift in Sources */,

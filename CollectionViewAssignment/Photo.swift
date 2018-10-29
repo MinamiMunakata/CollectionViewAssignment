@@ -10,6 +10,6 @@ import Foundation
 
 struct Photo {
   let subject: String
-  let location: String
+  let location: PhotoFactory.Location
   let imageName: String
 }
