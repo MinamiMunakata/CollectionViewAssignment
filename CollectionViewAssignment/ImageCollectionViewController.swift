@@ -12,6 +12,9 @@ private let reuseIdentifier = "Cell"
 
 class ImageCollectionViewController: UICollectionViewController {
   
+  let photoFactory = PhotoFactory()
+  
+  
   @IBAction func segmentControllTapped(_ sender: UISegmentedControl) {
     if sender.selectedSegmentIndex == 0 {
       // subject
@@ -43,13 +46,14 @@ class ImageCollectionViewController: UICollectionViewController {
   
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     
-    return 10
+    return photoFactory.images.count
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ImageCollectionViewCell
     
     // Configure the cell
+    cell.imageView.image = UIImage(named: photoFactory.images[indexPath.item].imageName)
     
     return cell
   }
