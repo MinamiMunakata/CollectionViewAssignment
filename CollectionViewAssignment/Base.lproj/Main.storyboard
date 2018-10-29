@@ -29,10 +29,21 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="114" height="109"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GLh-YM-ASM">
+                                            <rect key="frame" x="0.0" y="0.0" width="114" height="109"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.60392156860000001" green="0.93333333330000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GLh-YM-ASM" secondAttribute="bottom" id="9wP-6N-uwX"/>
+                                    <constraint firstItem="GLh-YM-ASM" firstAttribute="top" secondItem="N03-Hi-hGQ" secondAttribute="top" id="IYM-xN-QBd"/>
+                                    <constraint firstAttribute="trailing" secondItem="GLh-YM-ASM" secondAttribute="trailing" id="QZk-kg-bIO"/>
+                                    <constraint firstItem="GLh-YM-ASM" firstAttribute="leading" secondItem="N03-Hi-hGQ" secondAttribute="leading" id="Ssn-7K-fY5"/>
+                                </constraints>
                                 <connections>
+                                    <outlet property="imageView" destination="GLh-YM-ASM" id="MUU-Af-2zQ"/>
                                     <outletCollection property="gestureRecognizers" destination="19c-Tx-yBN" appends="YES" id="RGA-da-8xv"/>
                                 </connections>
                             </collectionViewCell>
@@ -58,7 +69,11 @@
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6S-Jp-zuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="19c-Tx-yBN"/>
+                <pinchGestureRecognizer id="19c-Tx-yBN">
+                    <connections>
+                        <action selector="pinch:" destination="aue-GU-xxl" id="lOY-aI-IAN"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1324" y="102.99850074962519"/>
         </scene>

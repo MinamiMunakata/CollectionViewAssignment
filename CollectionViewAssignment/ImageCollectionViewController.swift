@@ -23,8 +23,13 @@ class ImageCollectionViewController: UICollectionViewController {
     }
   }
   
+  @IBAction func pinch(_ sender: UIPinchGestureRecognizer) {
+    // NOTE: press option and shift key to test
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
 
   }
   
