@@ -13,23 +13,23 @@ private let reuseIdentifier = "Cell"
 class ImageCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
   
   var photoFactory = PhotoFactory()
-  var sortedPhotos = [Photo]()
   
   
   
   @IBOutlet weak var segmentControll: UISegmentedControl!
   
   @IBAction func segmentControllTapped(_ sender: UISegmentedControl) {
-    if sender.selectedSegmentIndex == 0 {
-      // subject
-      photoFactory.bySubject = photoFactory.images.sorted { $0.subject < $1.subject }
-      sortedPhotos = photoFactory.bySubject
-      collectionView.reloadData()
-    } else {
-      // location
-      collectionView.reloadData()
-      print(segmentControll.selectedSegmentIndex)
-    }
+//    if sender.selectedSegmentIndex == 0 {
+//      // subject
+//      photoFactory.bySubject = photoFactory.images.sorted { $0.subject < $1.subject }
+//      sortedPhotos = photoFactory.bySubject
+//      collectionView.reloadData()
+//    } else {
+//      // location
+//      collectionView.reloadData()
+//      print(segmentControll.selectedSegmentIndex)
+//    }
+    collectionView.reloadData()
   }
   
   @IBAction func pinch(_ sender: UIPinchGestureRecognizer) {
