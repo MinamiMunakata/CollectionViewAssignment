@@ -13,6 +13,7 @@ import Foundation
 class PhotoFactory {
   var images: [Photo]
   var bySubject: [String: [Photo]] // alph and photos
+  var sectionKeys: [String]
   var byLocation: [Location: [Photo]]
   
   enum Location: Int, CaseIterable {
@@ -46,6 +47,8 @@ class PhotoFactory {
     
     images = images.sorted { $0.subject < $1.subject }
     bySubject = [:]
+    var keys = [String]()
+    
     for photo in images {
       let initial = photo.subject.prefix(1)
       var array = [Photo]()
@@ -56,11 +59,11 @@ class PhotoFactory {
       } else {
         array.removeAll()
         array.append(photo)
+        keys.append(String(initial))
         bySubject[String(initial)] = array
       }
     }
-    print("HashMap: \(bySubject.count)")
-    print(bySubject)
+    sectionKeys = keys.sorted { $0.lowercased() < $1.lowercased() }
     byLocation = [:]
     var arr = [Photo]()
     for location in Location.allCases {
@@ -71,4 +74,3 @@ class PhotoFactory {
     
   }
 }
-

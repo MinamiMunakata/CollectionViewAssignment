@@ -31,19 +31,32 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GLh-YM-ASM">
-                                            <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="113" height="85"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVt-ge-MTZ">
+                                            <rect key="frame" x="0.0" y="85" width="113" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="CsF-gk-KdL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="GLh-YM-ASM" secondAttribute="bottom" id="9wP-6N-uwX"/>
-                                    <constraint firstItem="GLh-YM-ASM" firstAttribute="top" secondItem="N03-Hi-hGQ" secondAttribute="top" id="IYM-xN-QBd"/>
-                                    <constraint firstAttribute="trailing" secondItem="GLh-YM-ASM" secondAttribute="trailing" id="QZk-kg-bIO"/>
-                                    <constraint firstItem="GLh-YM-ASM" firstAttribute="leading" secondItem="N03-Hi-hGQ" secondAttribute="leading" id="Ssn-7K-fY5"/>
+                                    <constraint firstItem="wVt-ge-MTZ" firstAttribute="top" secondItem="GLh-YM-ASM" secondAttribute="bottom" id="LtJ-k8-ddo"/>
+                                    <constraint firstAttribute="trailing" secondItem="GLh-YM-ASM" secondAttribute="trailing" id="SYQ-oD-WjM"/>
+                                    <constraint firstAttribute="bottom" secondItem="wVt-ge-MTZ" secondAttribute="bottom" id="Uly-gd-rfY"/>
+                                    <constraint firstItem="GLh-YM-ASM" firstAttribute="leading" secondItem="N03-Hi-hGQ" secondAttribute="leading" id="WJJ-MG-U0z"/>
+                                    <constraint firstAttribute="trailing" secondItem="wVt-ge-MTZ" secondAttribute="trailing" id="qzl-Oc-zpe"/>
+                                    <constraint firstItem="GLh-YM-ASM" firstAttribute="top" secondItem="N03-Hi-hGQ" secondAttribute="top" id="w5z-oM-pNI"/>
+                                    <constraint firstItem="wVt-ge-MTZ" firstAttribute="leading" secondItem="N03-Hi-hGQ" secondAttribute="leading" id="zrm-Sg-SFw"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="GLh-YM-ASM" id="MUU-Af-2zQ"/>
+                                    <outlet property="subject" destination="wVt-ge-MTZ" id="cpv-vc-agE"/>
                                     <outletCollection property="gestureRecognizers" destination="19c-Tx-yBN" appends="YES" id="RGA-da-8xv"/>
                                 </connections>
                             </collectionViewCell>
@@ -75,7 +88,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="gQ4-kh-9f7">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="hnA-TA-4PY">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="hnA-TA-4PY">
                             <rect key="frame" x="121" y="7" width="133" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
