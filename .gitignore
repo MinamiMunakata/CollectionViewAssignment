@@ -78,4 +78,7 @@ fastlane/test_output
 iOSInjectionProject/
 
 # Mac stuff
-.DS_Store
+.DS_Stor
+
+# Images
+*.imageset/
